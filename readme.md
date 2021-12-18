@@ -1,5 +1,5 @@
 # About
-This project aims to wrap the Detectron2 implementation  for using it with ROS. Currently, only a node for semantic segmentation is implemented, but in later versions I aim to release the object detection node as well.
+This project aims to wrap the [Detectron2](https://github.com/facebookresearch/detectron2) implementation  for using it with ROS. Currently, only a node for semantic segmentation is implemented, but in later versions I aim to release the object detection node as well.
 
 # Usage
 
