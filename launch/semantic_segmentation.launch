@@ -1,9 +1,20 @@
 <launch>
-    <param name="/use_sim_time" value="true"/>
+    
     <arg name="image_topic" default="/camera/image"/>
+    <arg name="camera_info_topic" default="/camera/camera_info"/>
+    <arg name="point_cloud_topic" default="/sensor/point_cloud"/>
     <arg name="confidence_threshold" default="0.8"/>
+    <arg name="process_scale" default="1.0"/>
+
     <node name="detectron" type="semantic_segmentation_node.py" pkg="detectron2_ros" output="screen">
         <remap from="/camera/image" to="$(arg image_topic)"/>
         <param name="confidence_threshold" value="$(arg confidence_threshold)"/>
     </node>
+
+    <node name="label_pointcloud_node" type="label_point_cloud_node.py" pkg="detectron2_ros" output="screen">
+        <remap from="/pointcloud" to="$(arg point_cloud_topic)"/>
+        <remap from="/mask/semantic" to="/detectron2/mask/semantic"/>
+        <remap from="/camera/camera_info" to="$(arg camera_info_topic)"/>
+    </node>
+
 </launch>
