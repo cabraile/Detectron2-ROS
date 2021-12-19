@@ -40,6 +40,7 @@ Implemented in `scripts/semantic_segmentation_node.py`.
 
 ## 3.2 Point cloud labelling node
 Implemented in `scripts/label_point_cloud_node.py` and used with the semantic segmentation node.
+Assumes the provided point cloud's coordinates is the same of the camera from which the mask is computed.
 
 **Subscribes to**
 * `/pointcloud` (`sensor_msgs.PointCloud2`). The point cloud points to be labelled.
