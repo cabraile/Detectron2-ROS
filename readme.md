@@ -27,10 +27,10 @@ A launch file wraps this node's call in `launch/semantic_segmentation.launch`, i
   * If you have installed the NVIDIA-toolkit 11.3, run `pip3 install torch==1.10.1+cu113 torchvision==0.11.2+cu113 torchaudio==0.10.1+cu113 -f https://download.pytorch.org/whl/cu113/torch_stable.html` (you will probably need admistrative privileges for that - include `sudo` if required). 
   * Otherwise check out their compatibility list in [this tutorial](https://detectron2.readthedocs.io/en/latest/tutorials/install.html) and [pytorch installation instructions](https://pytorch.org/get-started/locally/).
 
-**Detectron2**:
+**Detectron2**
 * This project's based upon the [Detectron2](https://github.com/facebookresearch/detectron2) framework developped by Facebook. Follow their installation and configuration instructions from [this link](https://detectron2.readthedocs.io/en/latest/tutorials/install.html).
 
-**Install dependences**
+**Install dependencies**
 * In the root directory of this project, run `pip install -r requirements.txt`
 
 **Make the scripts executable**
