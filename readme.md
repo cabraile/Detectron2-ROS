@@ -6,7 +6,7 @@ This project aims to wrap the [Detectron2](https://github.com/facebookresearch/d
 **ROS**
 * Make sure ROS1 is installed in your machine. This project was tested using the ROS Noetic version. Installation instructions can be found [here](http://wiki.ros.org/noetic/Installation).
 
-**Setup your GPU (GPU)**
+**Setup your GPU (Optional)**
 * Even though this framework can be run without GPU, proper GPU support will enhance the performance of your application.
 * In this project, the NVIDIA-toolkit v11.3 was used in a Ubuntu 20.04 machine. The toolkit and drivers can be downloaded [here](https://developer.nvidia.com/cuda-11.3.0-download-archive?target_os=Linux&target_arch=x86_64&Distribution=Ubuntu&target_version=20.04&target_type=runfile_local). I suggest running the runfile instead of the `deb` installation.
 
@@ -24,7 +24,7 @@ This project aims to wrap the [Detectron2](https://github.com/facebookresearch/d
 
 **Make the scripts executable**
 * In the root directory of this project, run `chmod +x scripts/*.py`.
-* 
+
 # 3. Nodes
 
 ## 3.1. Semantic segmentation node
