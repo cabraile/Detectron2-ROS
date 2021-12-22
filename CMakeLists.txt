@@ -4,7 +4,7 @@ project(detectron2_ros)
 # Dependencies
 # ------------------
 
-find_package(catkin REQUIRED COMPONENTS rospy)
+find_package(catkin REQUIRED COMPONENTS rospy ros_numpy)
 
 # Include
 # -----------------
